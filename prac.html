@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Shopping Cart</title>
+    
+</head>
+<body>
+
+<table id="product-list">
+    <caption><h2>Product List</h2></caption>
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td id = "product-id">Product 1</td>
+            <td>10 TK</td>
+            <td><button onclick="addToCart('product1', 10)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td id = "product-id">Product 2</td>
+            <td>20 Tk</td>
+            <td><button onclick="addToCart('product2', 20)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td id = "product-id">Product 3</td>
+            <td>70 Tk</td>
+            <td><button onclick="addToCart('product3', 70)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td id = "product-id">Product 4</td>
+            <td>30 Tk</td>
+            <td><button onclick="addToCart('product4', 30)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td id = "product-id">Product 5</td>
+            <td>100 Tk</td>
+            <td><button onclick="addToCart('product5', 100)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td id = "product-id">Product 6</td>
+            <td>120 Tk</td>
+            <td><button onclick="addToCart('product6', 120)">Add to Cart</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<table id="cart">
+    <caption><h2>Shopping Cart</h2></caption>
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="cart-items"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
